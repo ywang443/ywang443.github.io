@@ -8,56 +8,56 @@ var products = [
 		vegetarian: true,
 		glutenFree: true,
 		organic: true,
-		price: 8.99
+		price: 9.00
 	},
 	{
 		name: "Avocado",
 		vegetarian: true,
 		glutenFree: true,
 		organic: true,
-		price: 7.99
+		price: 8.00
 	},
 	{
 		name: "Beef Stew Chuncks",
 		vegetarian: false,
 		glutenFree: true,
 		organic: false,
-		price: 26.32
+		price: 26.00
 	},
 	{
 		name: "Bread",
 		vegetarian: true,
 		glutenFree: false,
 		organic: false,
-		price: 2.35
+		price: 2.50
 	},
 	{
 		name: "Brocoli",
 		vegetarian: true,
 		glutenFree: true,
 		organic: false,
-		price: 1.99
+		price: 2.00
 	},
 	{
 		name: "Chichken wings",
 		vegetarian: false,
 		glutenFree: true,
 		organic: false,
-		price: 11.51
+		price: 11.20
 	},
 	{
 		name: "Garlic",
 		vegetarian: true,
 		glutenFree: true,
 		organic: true,
-		price: 4.99
+		price: 5.00
 	},
 	{
 		name: "Pork Lion Chop",
 		vegetarian: false,
 		glutenFree: true,
 		organic: false,
-		price: 11.88
+		price: 11.80
 	},
 	{
 		name: "Raspberry",
