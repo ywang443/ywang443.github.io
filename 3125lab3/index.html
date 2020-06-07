@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<! This style sheet is taken from  https://www.w3schools.com/howto/howto_js_tabs.asp>
+	<link href="styles/style.css" rel="stylesheet" type="text/css">
+	  <title>Yibo Groceries</title>
+</head>
+
+<body>
+
+
+	<div>
+		<h1>Yibo Groceries<h1>
+	</div>
+
+<!-- Tab links, each one with an onclick event associated with it -->
+<div class="sidenav">
+	<a href="#Client" onclick="openInfo(event, 'Client')">Customer </a>
+	<a href="#Products" onclick="openInfo(event, 'Products')">Products </a>
+	<a href="#Shopping cart" onclick="openInfo(event, 'Cart')">Shopping cart </a>
+</div>
+
+<!-- Tab content -->
+<div id="Client" class="tabcontent">
+  <h3>Customer Information</h3>
+  <p>Tell us a bit about you.</p>
+	What is your dietary preference?
+
+	<form name = "myForm">
+	<input type="radio" name="dietSelect" id="dietSelect" value="Vegetarian">I prefer vegetarian diet.
+	<input type="radio" name="dietSelect" id="dietSelect" value="GlutenFree">I prefer gluten-free diet.
+	<input type="radio" name="dietSelect" id="dietSelect" value="GlutenFree&Vegetarian">I prefer both gluten-free and vegetarian diet.
+	<input type="radio" name="dietSelect" id="dietSelect" value="Organic">I prefer organic diet.
+	<input type="radio" name="dietSelect" id="dietSelect" value="None">I prefer standard diet.
+</form>
+
+</div>
+
+<div id="Products" class="tabcontent">
+  <h3>Here is your perfered products!</h3>
+  <p>We preselected products based on your preference.</p>
+	<div>
+		<button id="fruits" type="button" class="category" onclick="fruitsFilter('displayProduct')">
+ 		Fruits
+		<button id="meat" type="button" class="category" onclick="meatFilter('displayProduct')">
+		Meat
+		<button id="bakery" type="button" class="category" onclick="bakeryFilter('displayProduct')">
+		Bakery
+		<button id="vegetables" type="button" class="category" onclick="vegetablesFilter('displayProduct')">
+ 		Vegetables
+		<button id="beverages" type="button" class="category" onclick="beveragesFilter('displayProduct')">
+		Beverages
+		<button id="dairy products" type="button" class="category" onclick="dairyproductsFilter( 'displayProduct')">
+		Dairy Products
+		<button id="cooking products" type="button" class="category" onclick="cookingproductsFilter('displayProduct')">
+		Cooking Products
+		<button id="all" type="button" class="category" onclick="allFilter('displayProduct')">
+		All
+	</div>
+	 Choose items to buy:
+	 <div id="displayProduct"></div>
+	 <button id="addCart" type="button" class="block" onclick="selectedItems()">
+		ADD
+	</button>
+</div>
+
+<div id="Cart" class="tabcontent">
+  <h3>Shopping cart</h3>
+  <p>Here is your shopping cart.</p>
+  <div id="displayCart"></div>
+</div>
+<p id="signature">Site created by Yibo Wang</p>
+
+<script src="scripts/groceries.js"></script>
+<script src="scripts/main.js"></script>
+
+</body>
+</html>
