@@ -1,0 +1,264 @@
+<!-- This file contains many elements adapted from the online tutoral -->
+<!-- on Bootstrap 4 as found here: https://www.w3schools.com/bootstrap4/default.asp -->
+
+<!-- Images source: -->
+<!-- jule.jpg taken from https://www.freepik.com/premium-vector/cartoon-successful-hairdresser_3951066.htm -->
+<!-- Erwind.jpb https://www.kijiji.ca/v-construction-trades-jobs/winnipeg/bicycle-mechanic/1499188319 -->
+
+<!-- Code for general Site layout and text info inspired by http://www.prosizo.com/#home -->
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- The head should contain an appropriate title for your site -->
+<head>
+    <title>Nicholas Z4 Barber</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Style sheet (CSS) and JavaScript scripts necessary to use Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <!-- Your own additional style sheet -->
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+</head>
+
+
+<body>
+
+    <!-- Medium size container, padding 3, margins 3, background dark, text is white -->
+    <!-- Should show the name of your company with an image or logo -->
+    <!-- Bootstrap has its own font for H1, H2, p, etc.  -->
+    <!-- Look in BS4 Typography https://www.w3schools.com/bootstrap4/bootstrap_typography.asp -->
+    <!-- Use your own CSS file to change those fonts if they do not correspond to your company's look -->
+    <div class="container-md p-3 my-3 border bg-dark text-white">
+        <h1>Welcome to Nicholas Z4 Barber!</h1>
+        <p>66666 Sussex Street, Ottawa, ON</p>
+        <p>613-666-6666</p>
+    </div>
+    <!-- Bootstrap has components for alerts: https://www.w3schools.com/bootstrap4/bootstrap_alerts.asp  -->
+    <!-- These can be useful for making sure someone reads something before continuing -->
+    <div class="container">
+        <div class="alert alert-warning alert-dismissible">
+          <h2>Alert</h2>
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <strong>COVID-19! </strong>Due to COVID-19, our shop is temprely closed!
+        </div>
+    </div>
+    <!-- Bootstrap contains a grid system you can explore https://www.w3schools.com/bootstrap4/bootstrap_grid_system.asp -->
+    <!-- It can be useful for placement of information -->
+
+
+    <!-- When you have messages to tell, remember that center align is not always the best choice -->
+    <div class="container-md p-3 my-3 border bg-light text-body">
+        <h3>About us</h3>
+        <p>Blending both modern and vintage, Nicholas Z4 Barber is Ottawa's new venue offering the most authentic barber shop experience.
+          Services include hair-cuts, traditional hot shave, face massage, and related hair services.</p>
+    </div>
+
+
+    <!-- Bootstrap has different types of tables https://www.w3schools.com/bootstrap4/bootstrap_tables.asp -->
+    <!-- Might be (or not) useful to show some information to the user -->
+    <div class="container">
+        <h2>Service </h2>
+        <p>Here is a list of services we offered</p>
+        <table class="table table-body table-hover">
+            <thead>
+            <tr>
+                <th>Service</th>
+                <th>Price</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>HAIRCUT</td>
+                <td>FROM $20.00(STUDENT FROM $18.00)</td>
+            </tr>
+            <tr>
+                <td>TRADITIONAL HOT SHAVE</td>
+                <td>FROM $35.00</td>
+            </tr>
+            <tr>
+                <td>BEARD & CUT</td>
+                <td>FROM $25.00</td>
+            </tr>
+            <tr>
+                <td>BUZZCUT</td>
+                <td>FROM $15.00</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+    <!-- Including a modal https://www.w3schools.com/bootstrap4/bootstrap_modal.asp -->
+    <!-- Modals are useful for additional information or questions -->
+    <!-- Here the modal is used for a little survey -->
+
+
+    <!-- Presenting the staff with cards: https://www.w3schools.com/bootstrap4/bootstrap_cards.asp -->
+    <!-- Card columns allows multiple cards next to each other -->
+    <!-- The first card's button doesn't go anywhere, it could be a modal -->
+    <!-- My second card limits the information seen and uses collapsible to show more -->
+    <div class="container p-3">
+        <h2>Services Display</h2>
+        <div class="card-columns">
+            <div class="card bg-secondry" style="width:200px">
+                <img class="card-img-top" src="images/haircut.jpg" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title">HAIRCUT</h4>
+                    <p class="card-text">A regular haircut is a men's and boy's hairstyle that has combable length on top,
+                      a defined or deconstructed side part, and a short, semi-short, medium, long, or extra long back and sides. </p>
+
+                </div>
+            </div>
+            <div class="card bg-secondry" style="width:200px">
+                <img class="card-img-top" src="images/hotshave.jpg" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title">TRADITIONAL HOT SHAVE</h4>
+                    <p class="card-text">A hot towel shave is a shaving treatment that is very effective.
+                       A hot towel is used when performing a razor shave and the procedure is a very relaxing experience.</p>
+
+                </div>
+            </div>
+            <div class="card bg-secondry" style="width:200px">
+                <img class="card-img-top" src="images/beard&cut.jpg" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title">BEARD&CUT</h4>
+                    <p class="card-text">A choosen hair cut with beard trim.</p>
+
+                </div>
+            </div>
+            <div class="card bg-secondry" style="width:200px">
+                <img class="card-img-top" src="images/buzzcut.jpg" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title">BUZZCUT</h4>
+                    <p class="card-text">A buzz cut is any of a variety of short hairstyles usually designed with electric clippers.
+                      Buzz cut styles include the butch cut, crew cut, flattop and ivy league.</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container p-3">
+        <h2>Our Designers</h2>
+        <div class="card-columns">
+            <div class="card bg-secondry" style="width:200px">
+                <img class="card-img-top" src="images/methdy.jpg" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title">Methdy</h4>
+                    <p class="card-text">Mehdy is general good at all haircut and hotshave.</p>
+                    <!-- collapsible part -->
+                    <a href="#profile1" class="btn btn-primary" data-toggle="collapse">About me</a>
+                    <div id="profile1" class="collapse p-2">
+                        <p>Mehdy studied hairstyling at a French professional school on the Quebec side
+                          before making his way over to Ottawa to learn more about trend and style.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card bg-secondry" style="width:200px">
+                <img class="card-img-top" src="images/james.webp" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title">James</h4>
+                    <p class="card-text">Men's buzzcut specialist</p>
+                      <!-- collapsible part -->
+                      <a href="#profile2" class="btn btn-primary" data-toggle="collapse">About me</a>
+                      <div id="profile2" class="collapse p-3">
+                          <p>James has been cutting and styling hair for 10 years.</p>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Collapsible with multiple items - accordion -->
+    <!-- https://www.w3schools.com/bootstrap4/bootstrap_collapse.asp -->
+    <!-- As we want to do a vertical navigation better suited for mobile design, an accordion pattern -->
+    <!-- could work well.  You can use other patterns too.  This is just an example. -->
+    <div class="container">
+        <div id="accordion">
+            <div class="card">
+            <div class="card">
+                <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseDate">Booking an appointment</a>
+                </div>
+                <div id="collapseDate" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>Choose your appointment date and time:</p>
+                        <!-- Bootstrap has various input components. Some examples are given here: -->
+                        <!-- Component shown here: https://v4-alpha.getbootstrap.com/components/forms/#textual-inputs -->
+                        <div class="form-group row">
+                            <label for="dateTimeInput" class="col-2 col-form-label">Date and time</label>
+                            <div class="col-10">
+                                <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="dateTimeInput">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseClientInfo">Your info</a>
+                </div>
+                <div id="collapseClientInfo" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>Leave your information</p>
+                        <p>First name: <input type="text" name="Firstname"></p>
+                      	<p>Last name: <input type="text" name="Lastname"></p>
+                        <p>Designers request:<input type="text" name="Designer"></p>
+                        <p>A shot descrption about the request of your order:</p>
+                        <textarea rows="5" cols="50"></textarea>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Customer Satisfaction Survey</h2>
+        <!-- Trigger the modal with a button -->
+        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#mySurvey">Start Your Survey</button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="mySurvey" role="dialog">
+            <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+
+                        <h2>How do you like your today's services?</h2>
+                        <p>Choose your satisfaction from 0 to 5:</p>
+                        <form>
+                        <label for="satisfaction">Value: <span id = "myValue"></span></label><br>
+                        <input id="slider" type="range" name="satisfaction" min="0" max="5" value="5">
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Save</button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+	<p id="signature">Site created by Yibo Wang</p>
+</body>
+<script>
+    var slider = document.getElementById("slider");
+    var output = document.getElementById("myValue");
+    output.innerHTML = 5
+    slider.oninput = function() {
+        output.innerHTML = this.value
+    }
+</script>
+</html>
