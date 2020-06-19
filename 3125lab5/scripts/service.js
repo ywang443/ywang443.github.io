@@ -55,7 +55,7 @@ function disableDates(date) {
     }else if(document.getElementById("designer").value == "james"){
         var string = jQuery.datepicker.formatDate(setDateFormat, date);
         return [ unavailableDates_james.indexOf(string) == -1 ]
-
+      }
 }
 
 
