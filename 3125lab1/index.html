@@ -5,44 +5,52 @@
     <meta charset="utf-8">
 	<link href="style.css" rel="stylesheet" type="text/css">
     <title>SEG3125lab1</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/themes/excite-bike/jquery-ui.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
   </head>
 
   <body>
-	<h1>Seg3125Lab1Survey</h1>
+  <h1 class="h1-responsive">Seg3125Lab1Survey</h1>
 	<form id="myform" action="index.php" >
 	<br>
 	<br>
-	<h1>This is a Survey page about AirCanada.</h1>
-	<h1>What do you think of the UI in this <a href="https://www.aircanada.com/ca/en/aco/home.html#/home:">AirCanada</a> site?</h1>
+	<h2  class="text-center">This is a Survey page about the website of AirCanada.</h2>
+	  <h2 class="text-center">What do you think of the UI in this <a href="https://www.aircanada.com/ca/en/aco/home.html#/home:">AirCanada</a> site?</h2>
 	<br>
 	<br>
 	<img src="AirCanada.PNG" alt="https://www.aircanada.com/ca/en/aco/home.html#/home:" width="auto" height="auto">
 	<br>
 	<br>
 	<div class="question">
-	<h1> Personal Information </h1>
-	<p>First name: <input type="text" name="Firstname"></p>
-	<p>Last name: <input type="text" name="Lastname"></p>
-	<br>
-	<br>
+	<h2 class="h2-responsive"> Personal Information </h2>
+
+  <p>Firstname: <input type="text" name="Firstname" placeholder="Firstname" required /><p>
+  <p>Firstname: <input type="text" name="Lastname" placeholder="Lastname" required /><p>
 
 	</div>
 
   <div class="question">
-	<h1> Question1 </h1>
+
+	<h2 class="h2-responsive"> Question1 </h2>
 	<p>What do you want to do to imporve this website?</p>
-	<textarea rows="5" cols="50"></textarea>
+  <textarea class="form-control" id="exampleFormControlTextarea5" rows="5" ></textarea>
 	<br>
-	<br>
+
 
 	</div>
 
   <div class="question">
-	<h1> Question2 </h1>
+	<h2 class="h2-responsive"> Question2 </h2>
 	<p>What is your general impression of the website?</p>
-	<br>
-	<br>
-    <div class="list">
+
+    <div  class="custom-control custom-radio">
                     <input type="radio" name="Q2" id="This website is too boring">
                     <label for="This website is too boring">This website is too boring</label><br>
                     <input type="radio" name="Q2" id="This website is very concise">
@@ -54,54 +62,81 @@
 	</div>
 
   <div class="question">
-  <h1> Question3 </h1>
+  <h2 class="h2-responsive"> Question3 </h2>
   <p>Which part do you think this website did the best?</p>
-  <select id="best">
+  I like:<br>
+  <select name="best">
     <option value="Functionality" selected="selected">Functionality</option>
     <option value="Consistency">Consistency</option>
     <option value="Efficient">Efficient</option>
     <option value="Usability">Usability</option>
     <option value="Reliability">Reliability</option>
   </select>
+
   <br>
   <br>
 
   </div>
 
   <div class="question">
-	<h1> Question4 </h1>
+	<h2 class="h2-responsive"> Question4 </h2>
 	<p>What goals you think this website achived?</p>
+  <p>I think this website achived:</p>
+  <div class="container-md p-3 my-3 bg-transparent text-black">
+    <input type="checkbox" name="achived" value="Functionality"> Functionality<br>
+    <input type="checkbox" name="achived" value="Consistency"> Consistency<br>
+    <input type="checkbox" name="achived" value="Efficient"> Efficient<br>
+    <input type="checkbox" name="achived" value="Usability"> Usability<br>
+    <input type="checkbox" name="achived" value="Security"> Security<br>
+    <input type="checkbox" name="achived" value="Reliability"> Reliability<br>
+  </div>
+
+	</div>
+
+  <div class="question">
+	  <h2 class="h2-responsive"> Question5 </h2>
+	<p>How do you like this website ?</p>
+
 	<br>
 	<br>
-  I think this website achived:<br>
+     Choose your satisfaction from 0 to 5:<br>
+     <br>
     <div class="list">
-      <input type="checkbox" name="Q4" id="Functionality">
-      <label for="Functionality">Functionality</label><br>
-      <input type="checkbox" name="Q4" id="Consistency">
-      <label for="Consistency">Consistency</label><br>
-      <input type="checkbox" name="Q4" id="Efficient">
-      <label for="Efficient">Efficient</label><br>
-      <input type="checkbox" name="Q4" id="Usability">
-      <label for="Usability">Usability</label><br>
-      <input type="checkbox" name="Q4" id="Security">
-      <label for="Security">Security</label><br>
-      <input type="checkbox" name="Q4" id="Reliability">
-      <label for="Reliability">Reliability</label><br>
+      <form>
+                        <label for="satisfaction">Your satisfaction: <span id = "myValue"></span></label><br>
+                        <input class="custom-range w-500"id="slider" type="range" name="satisfaction" min="0" max="5" value="5">
+                        </form>
 
     </div>
 	</div>
 
+  <div class="question">
+	  <h2 class="h2-responsive"> Question6</h2>
+	<p>Would you like to share this website to you friends?</p>
 
-	<br>
-	<br>
 
-	Leave your comments:<br>
-	<textarea rows="5" cols="50"></textarea>
 
-	<br>
-	<br>
+     <div class="onoffswitch">
+       <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" tabindex="0" checked>
+       <label class="onoffswitch-label" for="myonoffswitch">
+           <span class="onoffswitch-inner"></span>
+           <span class="onoffswitch-switch"></span>
+       </label>
+   </div>
 
-	<button id="submitButton" type="button" class="block">
+	</div>
+
+
+	  <div class="question">
+        <h2 class="h2-responsive"> Comments</h2>
+  <div class="form-group green-border-focus">
+    <label for="exampleFormControlTextarea5">Leave your comments, help the website imporve:</label>
+    <textarea class="form-control" id="exampleFormControlTextarea5" rows="3"></textarea>
+  </div>
+  </div>
+
+
+	<button id="submitButton" type="button" class="block btn-success">
 		Submit!
 	</button>
 
@@ -109,4 +144,14 @@
 
 	</form>
   </body>
+
+  <script>
+    var slider = document.getElementById("slider");
+    var output = document.getElementById("myValue");
+    output.innerHTML = 5
+    slider.oninput = function() {
+        output.innerHTML = this.value
+    }
+</script>
+
 </html>
